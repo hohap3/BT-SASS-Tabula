@@ -1,0 +1,33 @@
+@import "./variable";
+
+@mixin styleText($fsize: $fs-base, $fweight: $fw-regular, $color: $c0-text) {
+  font-size: $fsize;
+  font-weight: $fweight;
+  color: $color;
+}
+
+@mixin groupFormFlex($pd: 1rem, $bdr: 2rem, $bd: thin solid $c0-border) {
+  padding: $pd;
+  border-radius: $bdr;
+  border: $bd;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+@mixin responsiveWebsite($size) {
+  @if $size == $mobile-max {
+    @media screen and (max-width: $mobile-max) {
+      @content;
+    }
+  } @else if $size == $tablet-max {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $pc-min) {
+      @content;
+    }
+  }
+}

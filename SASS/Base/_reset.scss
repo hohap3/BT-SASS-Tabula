@@ -1,0 +1,38 @@
+// Setting all
+
+* {
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  box-sizing: inherit;
+}
+
+// Setting html
+
+html {
+  font-size: 62.5%; // 1rem = 10px;
+  line-height: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+// Animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

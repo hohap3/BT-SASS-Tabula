@@ -1,0 +1,90 @@
+@import "../Helpers/mixin";
+@import "../Components/button";
+
+.footer {
+  background-image: url("../../img/footer_background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $c0-white;
+
+  .footer__content {
+    padding: 1rem 0 18rem;
+    .footer__item {
+      h2 {
+        @include styleText($fs-2xl-2, $fw-semi-bold, $c0-white);
+        margin-bottom: 3rem;
+      }
+
+      .footer__list-no-link {
+        li {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          @include styleText($fs-sm, $fw-regular, $c0-white);
+          margin-bottom: 1rem;
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      .footer__list-link {
+        li {
+          margin-bottom: 1.8rem;
+          a {
+            @include styleText($fs-sm, $fw-regular, $c0-white);
+          }
+        }
+      }
+
+      .footer__contact {
+        gap: 1.4rem;
+
+        a {
+          @include styleText($fs-base, $fw-regular, $c0-white);
+          transition: all 0.4s;
+          &:hover {
+            color: $c0-text;
+          }
+        }
+      }
+
+      .footer__form {
+        input {
+          text-align: center;
+          @include styleText($fs-sm, $fw-regular, $c0-white);
+          background-color: transparent;
+          border-radius: 5rem;
+          padding: 1rem;
+          border: thin solid $c2-border;
+          width: 100%;
+          transition: all 0.4s;
+
+          &::placeholder {
+            color: $c0-white;
+          }
+
+          &:focus {
+            border-color: $c0-white;
+          }
+        }
+      }
+
+      .footer__submit {
+        @extend .button;
+        background-color: $c0-white !important;
+        color: $c0-text !important;
+        padding: 1.6rem 0;
+        width: 100%;
+        border: thin solid $c0-white !important;
+
+        &:hover {
+          background-color: $c-primary !important;
+          color: $c0-white !important;
+        }
+      }
+    }
+  }
+}

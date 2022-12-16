@@ -1,0 +1,18 @@
+@import "../Helpers/variable";
+@import "../Helpers/mixin";
+
+.button {
+  box-shadow: 0 0 0 0.2rem $c-primary inset;
+  @include styleText($fs-sm-s, $fw-medium, $c0-white);
+  border-radius: 5rem;
+  cursor: pointer;
+  background-color: $c-primary;
+  transition: all 0.3s;
+  border: thin solid $c-primary;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $c0-white;
+    color: $c-primary;
+  }
+}

@@ -1,0 +1,61 @@
+.team {
+  background-image: url("../../img/Wave_White_bottom_right_shape_01.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+  background-color: $c0-purple;
+
+  @for $index from 1 to 9 {
+    .team__item-#{$index} {
+      animation-name: fadeIn;
+      animation-duration: #{$index * 0.5}s;
+    }
+  }
+
+  .team__item {
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: $c0-white;
+    transition: all 0.4s;
+
+    .team__images {
+      overflow: hidden;
+      img {
+        transform: scale(1);
+        transition: transform 0.8s;
+      }
+    }
+
+    .team__info {
+      padding: 2.8rem 4rem;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+
+      h4 {
+        @include styleText($fs-sm-s, $fw-medium, $c-primary);
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      h2 {
+        @include styleText($fs-2xl-2, $fw-semi-bold, $c0-text);
+        margin: 0.6rem 0;
+      }
+
+      p {
+        margin: 0;
+        @include styleText();
+        text-align: center;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0.2rem 2rem rgba($color: #000000, $alpha: 0.1);
+
+      img {
+        transform: scale(1.04);
+      }
+    }
+  }
+}

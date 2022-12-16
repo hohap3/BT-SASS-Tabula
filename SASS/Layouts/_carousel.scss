@@ -1,0 +1,43 @@
+@import "../Helpers/variable";
+@import "../Helpers/mixin";
+
+.carousel {
+  padding-top: $header-height;
+  background-image: url("../../img/yellow_top_wave_01.png"),
+    url("../../img/Violet_top_left_wave.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: top left, bottom left;
+  position: relative;
+  z-index: 1;
+  height: 74rem;
+
+  .carousel__item {
+    height: 100%;
+    .carousel__text {
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+
+      p {
+        @include styleText($fs-2xl, $fw-medium, $c-primary);
+        text-transform: uppercase;
+        margin-bottom: 0.6rem;
+
+        @include responsiveWebsite($tablet-max) {
+          font-size: $fs-base;
+        }
+
+        @include responsiveWebsite($mobile-max) {
+          font-size: $fs-base;
+        }
+      }
+
+      h2 {
+        @include styleText($fs-5xl-2, $fw-bold, $c0-text);
+        line-height: calc($fs-5xl + 1rem);
+      }
+    }
+  }
+}
