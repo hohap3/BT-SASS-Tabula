@@ -10,6 +10,11 @@
 
   .footer__content {
     padding: 1rem 0 18rem;
+
+    @include responsiveWebsite($mobile-max) {
+      padding: 0 2rem;
+    }
+
     .footer__item {
       h2 {
         @include styleText($fs-2xl-2, $fw-semi-bold, $c0-white);

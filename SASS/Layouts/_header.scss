@@ -13,10 +13,12 @@
 
   @include responsiveWebsite($tablet-max) {
     height: $header-height-mobile;
+    background-color: $c0-white;
   }
 
   @include responsiveWebsite($mobile-max) {
     height: $header-height-mobile;
+    background-color: $c0-white;
   }
 
   .header__body {

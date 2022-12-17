@@ -76,11 +76,13 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header {
     height: 4.8rem;
+    background-color: #fff;
   }
 }
 @media screen and (max-width: 767px) {
   .header {
     height: 4.8rem;
+    background-color: #fff;
   }
 }
 .header .header__body {
@@ -262,6 +264,11 @@ ul {
 }
 .footer .footer__content {
   padding: 1rem 0 18rem;
+}
+@media screen and (max-width: 767px) {
+  .footer .footer__content {
+    padding: 0 2rem;
+  }
 }
 .footer .footer__content .footer__item h2 {
   font-size: 2.6rem;
