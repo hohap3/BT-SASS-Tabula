@@ -270,6 +270,22 @@ ul {
     padding: 0 2rem;
   }
 }
+.footer .footer__content .footer__item-1 {
+  animation-name: fadeIn;
+  animation-duration: 200ms;
+}
+.footer .footer__content .footer__item-2 {
+  animation-name: fadeIn;
+  animation-duration: 400ms;
+}
+.footer .footer__content .footer__item-3 {
+  animation-name: fadeIn;
+  animation-duration: 600ms;
+}
+.footer .footer__content .footer__item-4 {
+  animation-name: fadeIn;
+  animation-duration: 800ms;
+}
 .footer .footer__content .footer__item h2 {
   font-size: 2.6rem;
   font-weight: 600;
@@ -295,6 +311,9 @@ ul {
   font-size: 1.4rem;
   font-weight: 400;
   color: #fff;
+}
+.footer .footer__content .footer__item .footer__list-link li:hover a {
+  opacity: 0.8;
 }
 .footer .footer__content .footer__item .footer__contact {
   gap: 1.4rem;
@@ -506,35 +525,35 @@ ul {
 }
 .team .team__item-1 {
   animation-name: fadeIn;
-  animation-duration: 0.5s;
+  animation-duration: 200ms;
 }
 .team .team__item-2 {
   animation-name: fadeIn;
-  animation-duration: 1s;
+  animation-duration: 400ms;
 }
 .team .team__item-3 {
   animation-name: fadeIn;
-  animation-duration: 1.5s;
+  animation-duration: 600ms;
 }
 .team .team__item-4 {
   animation-name: fadeIn;
-  animation-duration: 2s;
+  animation-duration: 800ms;
 }
 .team .team__item-5 {
   animation-name: fadeIn;
-  animation-duration: 2.5s;
+  animation-duration: 1000ms;
 }
 .team .team__item-6 {
   animation-name: fadeIn;
-  animation-duration: 3s;
+  animation-duration: 1200ms;
 }
 .team .team__item-7 {
   animation-name: fadeIn;
-  animation-duration: 3.5s;
+  animation-duration: 1400ms;
 }
 .team .team__item-8 {
   animation-name: fadeIn;
-  animation-duration: 4s;
+  animation-duration: 1600ms;
 }
 .team .team__item {
   overflow: hidden;

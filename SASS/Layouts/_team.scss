@@ -8,7 +8,7 @@
   @for $index from 1 to 9 {
     .team__item-#{$index} {
       animation-name: fadeIn;
-      animation-duration: #{$index * 0.5}s;
+      animation-duration: #{$index * 200}ms;
     }
   }
 
