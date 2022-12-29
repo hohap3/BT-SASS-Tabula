@@ -41,6 +41,7 @@ ul {
   transition: all 0.3s;
   border: thin solid #b61984;
   text-transform: uppercase;
+  outline: none;
 }
 .button:hover, .register .resister__button:hover, .footer .footer__content .footer__item .footer__submit:hover, .header .header__body .header__contact .header__contact-btn:hover {
   background-color: #fff;
@@ -58,6 +59,7 @@ ul {
   transition: all 0.3s;
   border: thin solid #b61984;
   text-transform: uppercase;
+  outline: none;
 }
 .button:hover, .register .resister__button:hover, .footer .footer__content .footer__item .footer__submit:hover, .header .header__body .header__contact .header__contact-btn:hover {
   background-color: #fff;
@@ -252,6 +254,7 @@ ul {
   transition: all 0.3s;
   border: thin solid #b61984;
   text-transform: uppercase;
+  outline: none;
 }
 .button:hover, .register .resister__button:hover, .footer .footer__content .footer__item .footer__submit:hover, .header .header__body .header__contact .header__contact-btn:hover {
   background-color: #fff;
@@ -414,6 +417,7 @@ ul {
   transition: all 0.3s;
   border: thin solid #b61984;
   text-transform: uppercase;
+  outline: none;
 }
 .button:hover, .register .resister__button:hover, .header .header__body .header__contact .header__contact-btn:hover, .footer .footer__content .footer__item .footer__submit:hover {
   background-color: #fff;
@@ -458,6 +462,7 @@ ul {
   align-items: center;
   flex-wrap: nowrap;
   gap: 1rem;
+  transition: all 0.3s;
 }
 .register .register__item .register__item-form .input-group-container .input-group .input-text {
   flex: 1;
@@ -479,6 +484,7 @@ ul {
   align-items: center;
   flex-wrap: nowrap;
   gap: 1rem;
+  transition: all 0.3s;
 }
 .register .register__item .register__item-form .select-group-container select {
   flex: 1;
@@ -486,6 +492,7 @@ ul {
   font-size: 1.22rem;
   font-weight: 400;
   color: #333;
+  width: 100%;
 }
 .register .register__item .register__item-form .select-group-container i {
   font-size: 1.4rem;
@@ -500,6 +507,7 @@ ul {
   flex-wrap: nowrap;
   gap: 1rem;
   align-items: flex-start;
+  transition: all 0.3s;
 }
 .register .register__item .register__item-form .area-group-container textarea {
   border: none;
@@ -598,7 +606,7 @@ ul {
   text-align: center;
 }
 .team .team__item:hover {
-  box-shadow: 0 0.2rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.4rem 2rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 .team .team__item:hover img {
   transform: scale(1.04);

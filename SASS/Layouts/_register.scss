@@ -34,6 +34,7 @@
         .input-group {
           flex: 1;
           @include groupFormFlex();
+          transition: all 0.3s;
           .input-text {
             flex: 1;
             border: none;
@@ -48,11 +49,13 @@
 
       .select-group-container {
         @include groupFormFlex();
+        transition: all 0.3s;
 
         select {
           flex: 1;
           border: none;
           @include styleText($fs-sm-s);
+          width: 100%;
         }
 
         i {
@@ -64,6 +67,8 @@
       .area-group-container {
         @include groupFormFlex();
         align-items: flex-start;
+        transition: all 0.3s;
+
         textarea {
           border: none;
           @include styleText($fs-sm-s);

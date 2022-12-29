@@ -10,6 +10,7 @@
   transition: all 0.3s;
   border: thin solid $c-primary;
   text-transform: uppercase;
+  outline: none;
 
   &:hover {
     background-color: $c0-white;

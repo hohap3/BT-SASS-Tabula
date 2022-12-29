@@ -13,6 +13,23 @@ function main() {
   }
 
   showNavbar();
+
+  // Focus JS
+  function inputFocus() {
+    const inputTextList = document.querySelectorAll(".input-focus");
+    if (inputTextList.length < 1) return;
+
+    inputTextList.forEach((input) => {
+      input.addEventListener("focus", () => {
+        input.parentElement.style.borderColor = "rgba(0,0,0,0.6)";
+      });
+      input.addEventListener("blur", () => {
+        input.parentElement.style.borderColor = "#0000001a";
+      });
+    });
+  }
+
+  inputFocus();
 }
 
 main();
