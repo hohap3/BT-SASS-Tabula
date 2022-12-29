@@ -528,35 +528,35 @@ ul {
 }
 .team .team__item-1 {
   animation-name: fadeIn;
-  animation-duration: 200ms;
+  animation-duration: 550ms;
 }
 .team .team__item-2 {
   animation-name: fadeIn;
-  animation-duration: 400ms;
+  animation-duration: 1100ms;
 }
 .team .team__item-3 {
   animation-name: fadeIn;
-  animation-duration: 600ms;
+  animation-duration: 1650ms;
 }
 .team .team__item-4 {
   animation-name: fadeIn;
-  animation-duration: 800ms;
+  animation-duration: 2200ms;
 }
 .team .team__item-5 {
   animation-name: fadeIn;
-  animation-duration: 1000ms;
+  animation-duration: 2750ms;
 }
 .team .team__item-6 {
   animation-name: fadeIn;
-  animation-duration: 1200ms;
+  animation-duration: 3300ms;
 }
 .team .team__item-7 {
   animation-name: fadeIn;
-  animation-duration: 1400ms;
+  animation-duration: 3850ms;
 }
 .team .team__item-8 {
   animation-name: fadeIn;
-  animation-duration: 1600ms;
+  animation-duration: 4400ms;
 }
 .team .team__item {
   overflow: hidden;
