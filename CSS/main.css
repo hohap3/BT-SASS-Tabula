@@ -275,19 +275,19 @@ ul {
 }
 .footer .footer__content .footer__item-1 {
   animation-name: fadeIn;
-  animation-duration: 200ms;
+  animation-duration: 680ms;
 }
 .footer .footer__content .footer__item-2 {
   animation-name: fadeIn;
-  animation-duration: 400ms;
+  animation-duration: 1360ms;
 }
 .footer .footer__content .footer__item-3 {
   animation-name: fadeIn;
-  animation-duration: 600ms;
+  animation-duration: 2040ms;
 }
 .footer .footer__content .footer__item-4 {
   animation-name: fadeIn;
-  animation-duration: 800ms;
+  animation-duration: 2720ms;
 }
 .footer .footer__content .footer__item h2 {
   font-size: 2.6rem;
