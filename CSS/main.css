@@ -167,14 +167,17 @@ ul {
     gap: 1rem;
   }
 }
-.header .header__body .header__navbar .header__navbar-list li:not(li.header__navbar-item:last-child) {
+.header .header__body .header__navbar .header__navbar-list .header__navbar-item:not(li.header__navbar-item:last-child) {
   margin: 0 2.3rem;
 }
-.header .header__body .header__navbar .header__navbar-list li {
+.header .header__body .header__navbar .header__navbar-list .header__navbar-item.active::after {
+  transform: scale(1);
+}
+.header .header__body .header__navbar .header__navbar-list .header__navbar-item {
   position: relative;
   height: 100%;
 }
-.header .header__body .header__navbar .header__navbar-list li a {
+.header .header__body .header__navbar .header__navbar-list .header__navbar-item a {
   font-size: 1.4rem;
   font-weight: 500;
   color: #333;
@@ -183,7 +186,7 @@ ul {
   display: flex;
   align-items: center;
 }
-.header .header__body .header__navbar .header__navbar-list li::after {
+.header .header__body .header__navbar .header__navbar-list .header__navbar-item::after {
   content: "";
   display: block;
   position: absolute;
@@ -197,10 +200,10 @@ ul {
   background-color: #b61984;
   transition: transform 0.4s;
 }
-.header .header__body .header__navbar .header__navbar-list li:hover a {
+.header .header__body .header__navbar .header__navbar-list .header__navbar-item:hover > a {
   color: #b61984;
 }
-.header .header__body .header__navbar .header__navbar-list li:hover::after {
+.header .header__body .header__navbar .header__navbar-list .header__navbar-item:hover::after {
   transform: scale(1);
 }
 .header .header__body .header__contact {
